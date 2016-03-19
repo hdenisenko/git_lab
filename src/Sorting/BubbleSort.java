@@ -7,8 +7,18 @@ public class BubbleSort {
 	 * @return					the input array, sorted least to greatest
 	 */
 	public static int[] bubbleSort(int[] unsortedArray) {
-		//TODO: S1 implements bubble sort
-		
-		return null;
+		 int temp;
+        for(int i=0; i < arr.length-1; i++){
+ 
+            for(int j=1; j < arr.length-i; j++){
+                if(arr[j-1] > arr[j]){
+                    temp=arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        return arr;
+    }
 	}
 }
