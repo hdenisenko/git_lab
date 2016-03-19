@@ -21,7 +21,11 @@ public class Main {
 		System.out.println();
 		
 		System.out.println("Sorted Array:");
-		//TODO: sort the array and print out its contents
+		UnSort u = new UnSort();
+		int[] sorted = u.unSort(unsortedArray);
+		for (int s : sorted) {
+			System.out.println(s + " ");
+		}
 		
 		
 	}
